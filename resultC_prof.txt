@@ -1,0 +1,864 @@
+Statistical profiling result from resultC-v8.log, (7031 ticks, 16 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     51    0.7%          /usr/lib/system/libsystem_pthread.dylib
+      5    0.1%          /usr/lib/system/libsystem_platform.dylib
+      5    0.1%          /usr/lib/system/libsystem_malloc.dylib
+      3    0.0%          /usr/lib/system/libsystem_kernel.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     12    0.2%    0.2%  LazyCompile: *next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:177:16
+      6    0.1%    0.1%  LazyCompile: *resolve node:path:1091:10
+      5    0.1%    0.1%  LazyCompile: *normalizeString node:path:66:25
+      5    0.1%    0.1%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      4    0.1%    0.1%  Function: ^validateString node:internal/validators:118:24
+      3    0.0%    0.0%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      3    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      3    0.0%    0.0%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      3    0.0%    0.0%  LazyCompile: *parse /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/vary/index.js:96:16
+      3    0.0%    0.0%  LazyCompile: *inspect node:internal/util/inspect:292:17
+      3    0.0%    0.0%  LazyCompile: *emit node:events:474:44
+      3    0.0%    0.0%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      3    0.0%    0.0%  Function: ^socketOnDrain node:_http_server:559:23
+      3    0.0%    0.0%  Function: ^fromString node:buffer:432:20
+      3    0.0%    0.0%  Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      2    0.0%    0.0%  RegExp: ^\/login\/?$
+      2    0.0%    0.0%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      2    0.0%    0.0%  LazyCompile: *realpathSync node:fs:2412:22
+      2    0.0%    0.0%  LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      2    0.0%    0.0%  LazyCompile: *getEncodingOps node:buffer:679:24
+      2    0.0%    0.0%  Function: ^updateChildren node:internal/modules/cjs/loader:165:24
+      2    0.0%    0.0%  Function: ^trim_prefix /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:293:23
+      2    0.0%    0.0%  Function: ^readFileSync node:fs:450:22
+      2    0.0%    0.0%  Function: ^push node:internal/fixed_queue:99:7
+      2    0.0%    0.0%  Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      2    0.0%    0.0%  Function: ^processPromiseRejections node:internal/process/promises:211:34
+      2    0.0%    0.0%  Function: ^onwrite node:internal/streams/writable:425:17
+      2    0.0%    0.0%  Function: ^onstat /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/send/index.js:717:33
+      2    0.0%    0.0%  Function: ^json /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/response.js:250:25
+      2    0.0%    0.0%  Function: ^hasListeners /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/send/index.js:1031:23
+      2    0.0%    0.0%  Function: ^getHeader node:_http_outgoing:590:57
+      2    0.0%    0.0%  Function: ^formatWithOptions node:internal/util/inspect:2024:27
+      2    0.0%    0.0%  Function: ^formatRaw node:internal/util/inspect:820:19
+      2    0.0%    0.0%  Function: ^format /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/content-type/index.js:65:17
+      2    0.0%    0.0%  Function: ^end /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:250:27
+      2    0.0%    0.0%  Function: ^createError /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/http-errors/index.js:49:22
+      2    0.0%    0.0%  Function: ^clearBuffer node:internal/streams/writable:529:21
+      2    0.0%    0.0%  Function: ^_addListener node:events:554:22
+      2    0.0%    0.0%  Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      2    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:357:35
+      2    0.0%    0.0%  Function: ^<anonymous> node:_http_outgoing:564:45
+      1    0.0%    0.0%  RegExp: ^\/logout\/?$
+      1    0.0%    0.0%  RegExp: ^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$
+      1    0.0%    0.0%  RegExp: ;\s*charset\s*=
+      1    0.0%    0.0%  RegExp: (?:^|\/)\.?\.$
+      1    0.0%    0.0%  RegExp: (?:^|[\\/])\.\.(?:[\\/]|$)
+      1    0.0%    0.0%  LazyCompile: *trim_prefix /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:293:23
+      1    0.0%    0.0%  LazyCompile: *syncExports node:internal/bootstrap/loaders:287:14
+      1    0.0%    0.0%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      1    0.0%    0.0%  LazyCompile: *matchKnownFields node:_http_incoming:231:26
+      1    0.0%    0.0%  LazyCompile: *deserializeObject /Users/cwoolf/node_modules/bson/lib/parser/deserializer.js:65:27
+      1    0.0%    0.0%  LazyCompile: *_storeHeader node:_http_outgoing:374:22
+      1    0.0%    0.0%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1    0.0%    0.0%  Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      1    0.0%    0.0%  Function: ^writeOrBuffer node:internal/streams/writable:365:23
+      1    0.0%    0.0%  Function: ^writeHead node:_http_server:269:19
+      1    0.0%    0.0%  Function: ^write /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/pino/lib/proto.js:175:16
+      1    0.0%    0.0%  Function: ^vary /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/vary/index.js:133:15
+      1    0.0%    0.0%  Function: ^validateNumber node:internal/validators:123:24
+      1    0.0%    0.0%  Function: ^validateEncoding node:internal/validators:199:26
+      1    0.0%    0.0%  Function: ^update node:internal/crypto/hash:95:40
+      1    0.0%    0.0%  Function: ^toPathIfFileURL node:internal/url:1496:25
+      1    0.0%    0.0%  Function: ^stylizeWithColor node:internal/util/inspect:540:26
+      1    0.0%    0.0%  Function: ^storeHeader node:_http_outgoing:517:21
+      1    0.0%    0.0%  Function: ^shouldTransform /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/compression/index.js:270:26
+      1    0.0%    0.0%  Function: ^setUnrefTimeout node:internal/timers:372:25
+      1    0.0%    0.0%  Function: ^set maxAge /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/session/cookie.js:83:13
+      1    0.0%    0.0%  Function: ^session /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:179:26
+      1    0.0%    0.0%  Function: ^serveStatic /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/serve-static/index.js:72:31
+      1    0.0%    0.0%  Function: ^send /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/response.js:111:25
+      1    0.0%    0.0%  Function: ^resOnFinish node:_http_server:788:21
+      1    0.0%    0.0%  Function: ^readableAddChunk node:internal/streams/readable:236:26
+      1    0.0%    0.0%  Function: ^readSync node:fs:684:18
+      1    0.0%    0.0%  Function: ^randomBytesSync /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/random-bytes/index.js:72:25
+      1    0.0%    0.0%  Function: ^pipe /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/send/index.js:506:43
+      1    0.0%    0.0%  Function: ^parserOnMessageComplete node:_http_common:147:33
+      1    0.0%    0.0%  Function: ^parse /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/content-type/index.js:106:16
+      1    0.0%    0.0%  Function: ^openSync node:fs:576:18
+      1    0.0%    0.0%  Function: ^onResponseHeaders /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/compression/index.js:140:47
+      1    0.0%    0.0%  Function: ^normalizeParseOptions /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/qs/lib/parse.js:204:59
+      1    0.0%    0.0%  Function: ^normalizeEncoding node:internal/util:160:27
+      1    0.0%    0.0%  Function: ^normalize node:path:1127:12
+      1    0.0%    0.0%  Function: ^nocompress /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/compression/index.js:134:25
+      1    0.0%    0.0%  Function: ^next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:177:16
+      1    0.0%    0.0%  Function: ^listOnTimeout node:internal/timers:507:25
+      1    0.0%    0.0%  Function: ^isstats /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/etag/index.js:104:18
+      1    0.0%    0.0%  Function: ^isEncoding node:buffer:530:40
+      1    0.0%    0.0%  Function: ^isAbsolute node:path:1156:13
+      1    0.0%    0.0%  Function: ^internalBinding node:internal/bootstrap/loaders:164:45
+      1    0.0%    0.0%  Function: ^insert node:internal/timers:350:16
+      1    0.0%    0.0%  Function: ^initialize /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/passport/lib/middleware/initialize.js:51:29
+      1    0.0%    0.0%  Function: ^hasHooks node:internal/async_hooks:471:18
+      1    0.0%    0.0%  Function: ^getOptions node:internal/fs/utils:314:20
+      1    0.0%    0.0%  Function: ^getDefaultTriggerAsyncId node:internal/async_hooks:433:34
+      1    0.0%    0.0%  Function: ^get node:internal/streams/writable:787:8
+      1    0.0%    0.0%  Function: ^get node:internal/console/constructor:203:14
+      1    0.0%    0.0%  Function: ^get node:internal/bootstrap/pre_execution:307:8
+      1    0.0%    0.0%  Function: ^get node:_http_incoming:108:16
+      1    0.0%    0.0%  Function: ^get /Users/cwoolf/node_modules/mongodb/lib/bson.js:28:74
+      1    0.0%    0.0%  Function: ^generate /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:363:22
+      1    0.0%    0.0%  Function: ^from node:buffer:296:28
+      1    0.0%    0.0%  Function: ^formatWithOptionsInternal node:internal/util/inspect:2048:35
+      1    0.0%    0.0%  Function: ^fastparse /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.0%  Function: ^expressInit /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/middleware/init.js:29:30
+      1    0.0%    0.0%  Function: ^endReadableNT node:internal/streams/readable:1338:23
+      1    0.0%    0.0%  Function: ^end node:_http_outgoing:833:45
+      1    0.0%    0.0%  Function: ^digest node:internal/crypto/hash:115:40
+      1    0.0%    0.0%  Function: ^destroy node:internal/streams/destroy:32:17
+      1    0.0%    0.0%  Function: ^deserializeObject /Users/cwoolf/node_modules/bson/lib/parser/deserializer.js:65:27
+      1    0.0%    0.0%  Function: ^debug /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/compression/node_modules/debug/src/debug.js:65:17
+      1    0.0%    0.0%  Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1    0.0%    0.0%  Function: ^compression /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/compression/index.js:59:31
+      1    0.0%    0.0%  Function: ^compileFunction node:vm:308:25
+      1    0.0%    0.0%  Function: ^checkIsHttpToken node:_http_common:221:26
+      1    0.0%    0.0%  Function: ^canBeRequiredByUsers node:internal/bootstrap/loaders:240:30
+      1    0.0%    0.0%  Function: ^assignSocket node:_http_server:239:62
+      1    0.0%    0.0%  Function: ^assertSize node:internal/crypto/random:75:20
+      1    0.0%    0.0%  Function: ^alignPool node:buffer:159:19
+      1    0.0%    0.0%  Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      1    0.0%    0.0%  Function: ^addListeners /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/compression/index.js:229:23
+      1    0.0%    0.0%  Function: ^addCatch node:events:347:18
+      1    0.0%    0.0%  Function: ^_write node:internal/streams/writable:283:16
+      1    0.0%    0.0%  Function: ^Writable.uncork node:internal/streams/writable:341:37
+      1    0.0%    0.0%  Function: ^Timeout.refresh node:internal/timers:210:37
+      1    0.0%    0.0%  Function: ^Socket._read node:net:596:34
+      1    0.0%    0.0%  Function: ^ReadableState node:internal/streams/readable:78:23
+      1    0.0%    0.0%  Function: ^ObjectId /Users/cwoolf/node_modules/bson/lib/objectid.js:24:22
+      1    0.0%    0.0%  Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    0.0%    0.0%  Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    0.0%    0.0%  Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1    0.0%    0.0%  Function: ^Long.subtract /Users/cwoolf/node_modules/bson/lib/long.js:720:40
+      1    0.0%    0.0%  Function: ^FastBuffer node:internal/buffer:958:14
+      1    0.0%    0.0%  Function: ^BinMsg /Users/cwoolf/node_modules/mongodb/lib/cmap/commands.js:394:16
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:168:39
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:680:42
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:668:38
+      1    0.0%    0.0%  Function: ^<anonymous> node:fs:197:10
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/cwoolf/node_modules/mongodb/lib/sdam/monitor.js:177:73
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:280:64
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:598:43
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/engine.io/build/server.js:479:30
+
+ [C++]:
+   ticks  total  nonlib   name
+   2739   39.0%   39.3%  t std::__1::unique_ptr<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*>, std::__1::__hash_node_destructor<std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*> > > > std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > > > >::__construct_node<char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >(char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> >&&)
+   1251   17.8%   18.0%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+   1021   14.5%   14.7%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+    451    6.4%    6.5%  T __kernelrpc_thread_policy_set
+    415    5.9%    6.0%  T _mach_port_request_notification
+    180    2.6%    2.6%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     73    1.0%    1.0%  T _vm_copy
+     65    0.9%    0.9%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+     58    0.8%    0.8%  t node::fs::WriteString(v8::FunctionCallbackInfo<v8::Value> const&)
+     56    0.8%    0.8%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+     43    0.6%    0.6%  t node::fs::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+     30    0.4%    0.4%  T _read$NOCANCEL
+     27    0.4%    0.4%  T _mach_voucher_extract_attr_recipe
+     17    0.2%    0.2%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+     17    0.2%    0.2%  T __kernelrpc_mach_vm_deallocate_trap
+     13    0.2%    0.2%  T _mach_msg_server
+     12    0.2%    0.2%  T _mmap
+     11    0.2%    0.2%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+     10    0.1%    0.1%  t ___vfprintf
+      9    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.1%    0.1%  T _kdebug_typefilter
+      8    0.1%    0.1%  t __os_once_gate_broadcast
+      8    0.1%    0.1%  t __os_nospin_lock_lock_slow
+      8    0.1%    0.1%  T ___sfp
+      7    0.1%    0.1%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      7    0.1%    0.1%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.1%    0.1%  t _free_small
+      7    0.1%    0.1%  t ___vfwscanf
+      6    0.1%    0.1%  t std::__1::messages_byname<char>::~messages_byname()
+      6    0.1%    0.1%  t _tiny_free_no_lock
+      6    0.1%    0.1%  t _szone_realloc
+      6    0.1%    0.1%  t _nanov2_find_block_and_allocate
+      6    0.1%    0.1%  t _free_tiny
+      6    0.1%    0.1%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.1%    0.1%  T _mprotect
+      5    0.1%    0.1%  t std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >& std::__1::__input_arithmetic<long long, wchar_t, std::__1::char_traits<wchar_t> >(std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >&, long long&)
+      5    0.1%    0.1%  T _inet_net_pton
+      4    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      4    0.1%    0.1%  t node::fs::FStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  t _small_malloc_should_clear
+      4    0.1%    0.1%  t __os_once_gate_wait
+      4    0.1%    0.1%  t __os_nospin_lock_unlock_slow
+      3    0.0%    0.0%  t std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> > std::__1::num_get<wchar_t, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> > >::__do_get_floating_point<float>(std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::ios_base&, unsigned int&, float&) const
+      3    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<node::CleanupHookCallback, void*>*> std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::find<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+      3    0.0%    0.0%  T node::InternalCallbackScope::Close()
+      3    0.0%    0.0%  T _fopen
+      3    0.0%    0.0%  T __platform_strncmp
+      3    0.0%    0.0%  T ___sflags
+      2    0.0%    0.0%  t std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> > std::__1::num_get<wchar_t, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> > >::__do_get_unsigned<unsigned long long>(std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::ios_base&, unsigned int&, unsigned long long&) const
+      2    0.0%    0.0%  t std::__1::__hash_table<unsigned long, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long>, std::__1::allocator<unsigned long> >::remove(std::__1::__hash_const_iterator<std::__1::__hash_node<unsigned long, void*>*>)
+      2    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &(node::(anonymous namespace)::Parser::on_header_field(char const*, unsigned long))>::Raw(llhttp__internal_s*, char const*, unsigned long)
+      2    0.0%    0.0%  t node::(anonymous namespace)::Parser::Initialize(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t _tiny_malloc_should_clear
+      2    0.0%    0.0%  t _tiny_malloc_from_free_list
+      2    0.0%    0.0%  t _small_malloc_from_free_list
+      2    0.0%    0.0%  t _rack_region_insert
+      2    0.0%    0.0%  t __platform_memmove$VARIANT$Haswell
+      2    0.0%    0.0%  t __cxxabiv1::__array_type_info::~__array_type_info()
+      2    0.0%    0.0%  t ___srefill0
+      2    0.0%    0.0%  T std::__1::__codecvt_utf8<char32_t>::do_in(__mbstate_t&, char const*, char const*, char const*&, char32_t*, char32_t*, char32_t*&) const
+      2    0.0%    0.0%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::cares_wrap::ChannelWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::binding::DLOpen(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T _semaphore_create
+      2    0.0%    0.0%  T _malloc_zone_malloc
+      1    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)2>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t std::__1::vector<std::__1::locale::facet*, std::__1::__sso_allocator<std::__1::locale::facet*, 28ul> >::vector(unsigned long)
+      1    0.0%    0.0%  t std::__1::locale::__imp::__imp(std::__1::locale::__imp const&, std::__1::locale::facet*, long)
+      1    0.0%    0.0%  t std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> > std::__1::num_get<wchar_t, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> > >::__do_get_floating_point<long double>(std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::ios_base&, unsigned int&, long double&) const
+      1    0.0%    0.0%  t std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >& std::__1::__input_arithmetic<unsigned long long, wchar_t, std::__1::char_traits<wchar_t> >(std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >&, unsigned long long&)
+      1    0.0%    0.0%  t non-virtual thunk to v8::internal::PointersUpdatingVisitor::~PointersUpdatingVisitor()
+      1    0.0%    0.0%  t node::NonOwningExternalTwoByteResource::data() const
+      1    0.0%    0.0%  t node::Buffer::(anonymous namespace)::EncodeUtf8String(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::AsyncHooks::pop_async_context(double)
+      1    0.0%    0.0%  t dyld3::Loader::mapAndFixupAllImages(Diagnostics&, bool, bool)
+      1    0.0%    0.0%  t _tiny_try_realloc_in_place
+      1    0.0%    0.0%  t _tiny_free_list_add_ptr
+      1    0.0%    0.0%  t _default_zone_free_definite_size
+      1    0.0%    0.0%  t __cxxabiv1::__shim_type_info::~__shim_type_info()
+      1    0.0%    0.0%  t __cxxabiv1::__function_type_info::~__function_type_info()
+      1    0.0%    0.0%  t __cxxabiv1::__free_with_fallback(void*)
+      1    0.0%    0.0%  t ___srefill1
+      1    0.0%    0.0%  t ___pfz_setup
+      1    0.0%    0.0%  t (anonymous namespace)::fallback_free(void*)
+      1    0.0%    0.0%  T std::__1::ios_base::init(void*)
+      1    0.0%    0.0%  T std::__1::__shared_weak_count::__release_shared()
+      1    0.0%    0.0%  T node::loader::ModuleWrap::SetSyntheticExport(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::loader::ModuleWrap::Instantiate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::fs::FSReqCallback::Reject(v8::Local<v8::Value>)
+      1    0.0%    0.0%  T node::UVException(v8::Isolate*, int, char const*, char const*, char const*, char const*)
+      1    0.0%    0.0%  T node::NodeArrayBufferAllocator::AllocateUninitialized(unsigned long)
+      1    0.0%    0.0%  T node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, int)
+      1    0.0%    0.0%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::Environment::RunWeakRefCleanup()
+      1    0.0%    0.0%  T node::Emit(node::Environment*, double, node::AsyncHooks::Fields, v8::Local<v8::Function>)
+      1    0.0%    0.0%  T node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventAfter(node::AsyncWrap::ProviderType, double)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitBefore(node::Environment*, double)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitAfter(node::Environment*, double)
+      1    0.0%    0.0%  T _tmpnam
+      1    0.0%    0.0%  T _task_restartable_ranges_synchronize
+      1    0.0%    0.0%  T _sscanf_l
+      1    0.0%    0.0%  T _scanf
+      1    0.0%    0.0%  T _realloc
+      1    0.0%    0.0%  T _pthread_rwlock_rdlock
+      1    0.0%    0.0%  T _pthread_qos_max_parallelism
+      1    0.0%    0.0%  T _mach_msg_trap
+      1    0.0%    0.0%  T _mach_msg_destroy
+      1    0.0%    0.0%  T _link_addr
+      1    0.0%    0.0%  T _inet_nsap_addr
+      1    0.0%    0.0%  T _dxprintf_exec
+      1    0.0%    0.0%  T __sseek
+      1    0.0%    0.0%  T ___collate_equiv_match
+
+ [Summary]:
+   ticks  total  nonlib   name
+    214    3.0%    3.1%  JavaScript
+   6737   95.8%   96.7%  C++
+    143    2.0%    2.1%  GC
+     64    0.9%          Shared libraries
+     16    0.2%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   6032   99.5%   85.8%  t std::__1::unique_ptr<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*>, std::__1::__hash_node_destructor<std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*> > > > std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > > > >::__construct_node<char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >(char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> >&&)
+     13    0.2%    0.2%  T _mach_msg_server
+     12    0.2%    0.2%  T _mmap
+      2    0.0%    0.0%  T _kdebug_typefilter
+      1    0.0%    0.0%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   2739   39.0%  t std::__1::unique_ptr<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*>, std::__1::__hash_node_destructor<std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*> > > > std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > > > >::__construct_node<char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >(char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> >&&)
+   1710   62.4%    t std::__1::unique_ptr<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*>, std::__1::__hash_node_destructor<std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*> > > > std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > > > >::__construct_node<char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >(char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> >&&)
+    224   13.1%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+    224  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:147:22
+    143   63.8%          Function: ^Socket._writeGeneric node:net:769:42
+    143  100.0%            Function: ^Socket._write node:net:806:35
+     52   23.2%          LazyCompile: *_write node:internal/streams/writable:283:16
+     52  100.0%            Function: ^Writable.write node:internal/streams/writable:333:36
+     29   12.9%          LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+     29  100.0%            Function: ^_write node:internal/streams/writable:283:16
+    194   11.3%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+    194  100.0%        Function: ^Socket._writeGeneric node:net:769:42
+    194  100.0%          Function: ^Socket._writev node:net:801:36
+    194  100.0%            Function: ^doWrite node:internal/streams/writable:398:17
+    113    6.6%      Function: ^memoryUsage node:internal/process/per_thread:168:23
+    113  100.0%        Function: ^<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/app.js:183:18
+    113  100.0%          Function: ^handle /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/layer.js:86:49
+    113  100.0%            Function: ^next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/route.js:116:16
+    101    5.9%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     78   77.2%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+     13   16.7%          Function: ~<anonymous> node:crypto:1:1
+     13  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     10   12.8%          Function: ~<anonymous> node:http:1:1
+     10  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7    9.0%          Function: ~<anonymous> node:tty:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7    9.0%          Function: ~<anonymous> node:tls:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5    6.4%          Function: ~<anonymous> node:internal/child_process:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    5.1%          Function: ~<anonymous> node:child_process:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    5.1%          Function: ~<anonymous> node:_http_client:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.6%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      2  100.0%            LazyCompile: ~get node:crypto:287:8
+      2    2.6%          LazyCompile: ~lazyLoadStreams node:fs:2845:25
+      2  100.0%            LazyCompile: ~get ReadStream node:fs:2988:17
+      2    2.6%          Function: ~<anonymous> node:worker_threads:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.6%          Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.6%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.6%          Function: ~<anonymous> node:https:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.6%          Function: ~<anonymous> node:assert:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.6%          Function: ~<anonymous> node:_tls_common:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.6%          Function: ~<anonymous> node:_http_common:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          LazyCompile: ~get node:dns:334:8
+      1  100.0%            t std::__1::unique_ptr<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*>, std::__1::__hash_node_destructor<std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*> > > > std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > > > >::__construct_node<char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >(char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> >&&)
+      1    1.3%          Function: ~<anonymous> node:net:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Function: ~<anonymous> node:module:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Function: ~<anonymous> node:internal/worker:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Function: ~<anonymous> node:internal/cluster/round_robin_handle:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Function: ~<anonymous> node:internal/blocklist:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Function: ~<anonymous> node:cluster:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Function: ~<anonymous> node:_tls_wrap:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Function: ~<anonymous> node:_http_server:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Function: ~<anonymous> node:_http_outgoing:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     23   22.8%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+     23  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+     23  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     58    3.4%      t std::__1::unique_ptr<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*>, std::__1::__hash_node_destructor<std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*> > > > std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > > > >::__construct_node<char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >(char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> >&&)
+      9   15.5%        Function: ^header /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/response.js:777:29
+      6   66.7%          Function: ^send /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/response.js:111:25
+      6  100.0%            Function: ^json /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/response.js:250:25
+      3   33.3%          Function: ^json /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/response.js:250:25
+      3  100.0%            Function: ^<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/app.js:183:18
+      7   12.1%        Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      7  100.0%          Function: ^<anonymous> node:_http_outgoing:564:45
+      7  100.0%            Function: ^setHeader node:_http_outgoing:574:57
+      4    6.9%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      2   50.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1   50.0%            LazyCompile: ~finalizeEsmResolution node:internal/modules/cjs/loader:939:31
+      1   50.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      2   50.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      4    6.9%        Function: ^format /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/content-type/index.js:65:17
+      4  100.0%          Function: ^setCharset /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/utils.js:248:41
+      4  100.0%            Function: ^send /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/response.js:111:25
+      4    6.9%        Function: ^compileFunction node:vm:308:25
+      4  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      4  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      3    5.2%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      2   66.7%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      2  100.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1   33.3%          Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      3    5.2%        Function: ^pipe /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/send/index.js:506:43
+      3  100.0%          Function: ^serveStatic /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/serve-static/index.js:72:31
+      3  100.0%            Function: ^handle /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/layer.js:86:49
+      2    3.4%        Function: ^getConstructorName node:internal/util/inspect:567:28
+      2  100.0%          Function: ^formatRaw node:internal/util/inspect:820:19
+      2  100.0%            Function: ^formatValue node:internal/util/inspect:745:21
+      2    3.4%        Function: ^Module node:internal/modules/cjs/loader:172:16
+      2  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      2    3.4%        Function: ^FastBuffer node:internal/buffer:958:14
+      2  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1   50.0%            Function: ^createPool node:buffer:151:20
+      1   50.0%            Function: ^allocate node:buffer:398:18
+      1    1.7%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:488:36
+      1  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:553:30
+      1  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:553:30
+      1    1.7%        LazyCompile: ~normalizeArgs /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/pino/lib/tools.js:266:33
+      1  100.0%          LazyCompile: ~pino /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/pino/pino.js:84:15
+      1  100.0%            Function: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/logger.js:1:1
+      1    1.7%        LazyCompile: ~header /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/response.js:777:29
+      1  100.0%          LazyCompile: ~json /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/response.js:250:25
+      1  100.0%            LazyCompile: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/app.js:183:18
+      1    1.7%        LazyCompile: ~Connection.collection /Users/cwoolf/node_modules/mongoose/lib/connection.js:1090:43
+      1  100.0%          LazyCompile: ~compile /Users/cwoolf/node_modules/mongoose/lib/model.js:4995:33
+      1  100.0%            LazyCompile: ~Mongoose._model /Users/cwoolf/node_modules/mongoose/lib/index.js:581:37
+      1    1.7%        LazyCompile: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/aproba/index.js:34:19
+      1  100.0%          t std::__1::unique_ptr<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*>, std::__1::__hash_node_destructor<std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*> > > > std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > > > >::__construct_node<char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >(char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> >&&)
+      1  100.0%            LazyCompile: ~validate /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/aproba/index.js:25:19
+      1    1.7%        LazyCompile: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:23:36
+      1  100.0%          t std::__1::unique_ptr<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*>, std::__1::__hash_node_destructor<std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*> > > > std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > > > >::__construct_node<char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >(char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> >&&)
+      1  100.0%            Function: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:1:1
+      1    1.7%        Function: ~<anonymous> node:internal/crypto/keys:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    1.7%        Function: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/signal-exit/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1    1.7%        Function: ^trim_prefix /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          LazyCompile: *next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            Function: ^compression /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/compression/index.js:59:31
+      1    1.7%        Function: ^set maxAge /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/session/cookie.js:83:13
+      1  100.0%          Function: ^Cookie /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/session/cookie.js:25:46
+      1  100.0%            Function: ^store.generate /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:158:28
+      1    1.7%        Function: ^set /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/application.js:359:23
+      1  100.0%          Function: ^app.<computed> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/application.js:490:25
+      1  100.0%            Function: ^json /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/response.js:250:25
+      1    1.7%        Function: ^pathtoRegexp /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/path-to-regexp/index.js:28:22
+      1  100.0%          Function: ^Layer /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/layer.js:33:15
+      1  100.0%            LazyCompile: ~route /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:502:29
+      1    1.7%        Function: ^getOwn node:internal/bootstrap/loaders:180:16
+      1  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:287:14
+      1  100.0%            Function: ^<anonymous> node:internal/bootstrap/loaders:273:15
+      1    1.7%        Function: ^flow node:internal/streams/readable:1008:14
+      1  100.0%          Function: ^resume_ node:internal/streams/readable:984:17
+      1  100.0%            Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.7%        Function: ^expressInit /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%          LazyCompile: *trim_prefix /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            LazyCompile: *next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:177:16
+      1    1.7%        Function: ^createToken /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/semver/internal/re.js:11:21
+      1  100.0%          Function: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/semver/internal/re.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1    1.7%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    1.7%        Function: ^HostAddress /Users/cwoolf/node_modules/mongodb/lib/utils.js:880:16
+      1  100.0%          Function: ^fromString /Users/cwoolf/node_modules/mongodb/lib/utils.js:931:22
+      1  100.0%            Function: ^get hostAddress /Users/cwoolf/node_modules/mongodb/lib/sdam/server_description.js:65:20
+     54    3.2%      Function: ^Hash node:internal/crypto/hash:58:14
+     54  100.0%        Function: ^createHash node:crypto:129:20
+     29   53.7%          Function: ^hash /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:596:14
+     17   58.6%            Function: ^isModified /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:425:24
+     12   41.4%            Function: ^generate /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:363:22
+     25   46.3%          Function: ^entitytag /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/etag/index.js:39:20
+     25  100.0%            Function: ^etag /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/etag/index.js:70:15
+     50    2.9%      Function: ^initialize /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/passport/lib/middleware/initialize.js:51:29
+     37   74.0%        Function: ^handle /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/layer.js:86:49
+     37  100.0%          Function: ^trim_prefix /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:293:23
+     25   67.6%            LazyCompile: *next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:177:16
+     12   32.4%            Function: ^<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:280:64
+     13   26.0%        LazyCompile: *trim_prefix /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:293:23
+     13  100.0%          LazyCompile: *next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:177:16
+     13  100.0%            Function: ^session /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:179:26
+     34    2.0%      Function: ^compression /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/compression/index.js:59:31
+     23   67.6%        Function: ^handle /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/layer.js:86:49
+     23  100.0%          Function: ^trim_prefix /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:293:23
+     19   82.6%            LazyCompile: *next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:177:16
+      4   17.4%            Function: ^<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:280:64
+     11   32.4%        LazyCompile: *trim_prefix /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:293:23
+     11  100.0%          LazyCompile: *next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:177:16
+     11  100.0%            Function: ^error /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/serve-static/index.js:115:39
+     32    1.9%      Function: ^randomFillSync node:internal/crypto/random:111:24
+     32  100.0%        Function: ^randomBytes node:internal/crypto/random:91:21
+     32  100.0%          Function: ^randomBytesSync /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/random-bytes/index.js:72:25
+     32  100.0%            Function: ^uidSync /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/uid-safe/index.js:75:18
+     31    1.8%      Function: ^hash /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:596:14
+     20   64.5%        Function: ^isModified /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:425:24
+     10   50.0%          Function: ^shouldSetCookie /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:464:29
+     10  100.0%            Function: ^<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:220:28
+     10   50.0%          Function: ^shouldSave /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:440:24
+     10  100.0%            Function: ^end /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:250:27
+     11   35.5%        Function: ^generate /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:363:22
+     11  100.0%          Function: ^session /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:179:26
+      6   54.5%            Function: ^handle /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/layer.js:86:49
+      5   45.5%            LazyCompile: *trim_prefix /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:293:23
+     29    1.7%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     29  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      6   20.7%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      6  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5   17.2%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:414:29
+      5  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      4   13.8%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3   10.3%          Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    6.9%          Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    6.9%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.4%          LazyCompile: ~initializeSourceMapsHandlers node:internal/bootstrap/pre_execution:453:38
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1    3.4%          Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.4%          Function: ~<anonymous> node:internal/modules/esm/translators:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.4%          Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.4%          Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.4%          Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.4%          Function: ~<anonymous> node:internal/bootstrap/pre_execution:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     25    1.5%      Function: ^digest node:internal/crypto/hash:115:40
+     14   56.0%        Function: ^hash /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:596:14
+      9   64.3%          Function: ^isModified /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:425:24
+      5   55.6%            Function: ^shouldSetCookie /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:464:29
+      4   44.4%            Function: ^shouldSave /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:440:24
+      5   35.7%          Function: ^generate /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:363:22
+      5  100.0%            Function: ^session /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:179:26
+     11   44.0%        Function: ^entitytag /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/etag/index.js:39:20
+     11  100.0%          Function: ^etag /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/etag/index.js:70:15
+     11  100.0%            Function: ^generateETag /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/utils.js:273:32
+     24    1.4%      Function: ^send /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/response.js:111:25
+     24  100.0%        Function: ^json /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/response.js:250:25
+     24  100.0%          Function: ^<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/app.js:183:18
+     24  100.0%            Function: ^handle /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/layer.js:86:49
+     23    1.3%      Function: ^getOptions node:internal/fs/utils:314:20
+     23  100.0%        Function: ^readFileSync node:fs:450:22
+     22   95.7%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+     22  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    4.3%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     19    1.1%      Function: ^end node:_http_outgoing:833:45
+     19  100.0%        Function: ^end /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/compression/index.js:92:28
+     19  100.0%          Function: ^end /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:250:27
+     19  100.0%            Function: ^send /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/response.js:111:25
+     18    1.1%      LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      8   44.4%        Function: ^onwrite node:internal/streams/writable:425:17
+      8  100.0%          Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      4   50.0%            Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      4   50.0%            Function: ^writeGeneric node:internal/stream_base_commons:147:22
+      4   22.2%        Function: ^endReadable node:internal/streams/readable:1328:21
+      4  100.0%          Function: ^Readable.read node:internal/streams/readable:394:35
+      3   75.0%            Function: ^resume_ node:internal/streams/readable:984:17
+      1   25.0%            Function: ^flow node:internal/streams/readable:1008:14
+      3   16.7%        Function: ^onDestroy node:internal/streams/destroy:73:21
+      3  100.0%          Function: ^onError node:_http_incoming:374:17
+      3  100.0%            Function: ^_destroy node:_http_incoming:176:55
+      2   11.1%        Function: ^maybeReadMore node:internal/streams/readable:602:23
+      2  100.0%          Function: ^addChunk node:internal/streams/readable:304:18
+      2  100.0%            Function: ^readableAddChunk node:internal/streams/readable:236:26
+      1    5.6%        Function: ^resOnFinish node:_http_server:788:21
+      1  100.0%          Function: ^emit node:events:474:44
+      1  100.0%            Function: ^onFinish node:_http_outgoing:828:18
+     18    1.1%      Function: ^parse /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/content-type/index.js:106:16
+     18  100.0%        Function: ^setCharset /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/utils.js:248:41
+     18  100.0%          Function: ^send /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/response.js:111:25
+     18  100.0%            Function: ^json /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/response.js:250:25
+     28    1.0%    Function: ^handle /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/layer.js:86:49
+     14   50.0%      Function: ^next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/route.js:116:16
+     14  100.0%        Function: ^dispatch /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/route.js:98:45
+     14  100.0%          Function: ^handle /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/layer.js:86:49
+     10   71.4%            LazyCompile: *next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:177:16
+      4   28.6%            Function: ^<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:280:64
+     11   39.3%      Function: ^trim_prefix /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:293:23
+      6   54.5%        LazyCompile: *next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:177:16
+      3   50.0%          Function: ^error /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/serve-static/index.js:115:39
+      3  100.0%            Function: ^emit node:events:474:44
+      1   16.7%          Function: ^urlencodedParser /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/body-parser/lib/types/urlencoded.js:79:36
+      1  100.0%            Function: ^handle /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/layer.js:86:49
+      1   16.7%          Function: ^initialize /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/passport/lib/middleware/initialize.js:51:29
+      1  100.0%            Function: ^handle /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/layer.js:86:49
+      1   16.7%          Function: ^expressInit /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%            Function: ^handle /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/layer.js:86:49
+      5   45.5%        Function: ^<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:280:64
+      5  100.0%          Function: ^process_params /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:338:47
+      5  100.0%            Function: ^next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:177:16
+      2    7.1%      LazyCompile: *next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:177:16
+      2  100.0%        Function: ^strategy.pass /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/passport/lib/middleware/authenticate.js:345:31
+      2  100.0%          Function: ^SessionStrategy.authenticate /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/passport/lib/strategies/session.js:45:50
+      2  100.0%            Function: ^attempt /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/passport/lib/middleware/authenticate.js:180:22
+      1    3.6%      Function: ^<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:280:64
+      1  100.0%        Function: ^process_params /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:338:47
+      1  100.0%          Function: ^next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            Function: ^strategy.pass /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/passport/lib/middleware/authenticate.js:345:31
+
+   1251   17.8%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+   1251  100.0%    t std::__1::unique_ptr<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*>, std::__1::__hash_node_destructor<std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*> > > > std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > > > >::__construct_node<char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >(char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> >&&)
+   1110   88.7%      Function: ^compileFunction node:vm:308:25
+   1099   99.0%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+   1097   99.8%          Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+   1014   92.4%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+     83    7.6%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+    141   11.3%      LazyCompile: ~compileFunction node:vm:308:25
+    141  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+    141  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1057:37
+    141  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+
+   1021   14.5%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+   1021  100.0%    t std::__1::unique_ptr<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*>, std::__1::__hash_node_destructor<std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*> > > > std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > > > >::__construct_node<char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >(char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> >&&)
+   1010   98.9%      Function: ^readSync node:fs:684:18
+   1009   99.9%        Function: ^tryReadSync node:fs:429:21
+   1008   99.9%          Function: ^readFileSync node:fs:450:22
+    952   94.4%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+     49    4.9%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+     11    1.1%      LazyCompile: ~readSync node:fs:684:18
+     11  100.0%        LazyCompile: ~tryReadSync node:fs:429:21
+     11  100.0%          LazyCompile: ~readFileSync node:fs:450:22
+     11  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+
+    451    6.4%  T __kernelrpc_thread_policy_set
+
+    415    5.9%  T _mach_port_request_notification
+    400   96.4%    t std::__1::unique_ptr<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*>, std::__1::__hash_node_destructor<std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*> > > > std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > > > >::__construct_node<char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >(char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> >&&)
+    129   32.3%      Function: ^onStreamRead node:internal/stream_base_commons:167:22
+     70   17.5%      LazyCompile: ~fromString /Users/cwoolf/node_modules/mongodb/lib/utils.js:931:22
+     70  100.0%        LazyCompile: ~get hostAddress /Users/cwoolf/node_modules/mongodb/lib/sdam/server_description.js:65:20
+     70  100.0%          LazyCompile: ~<anonymous> /Users/cwoolf/node_modules/mongodb/lib/sdam/server.js:63:55
+     70  100.0%            Function: ^emit node:events:474:44
+     62   15.5%      LazyCompile: ~Long.comp /Users/cwoolf/node_modules/bson/lib/long.js:311:36
+     62  100.0%        LazyCompile: ~Long.lessThanOrEqual /Users/cwoolf/node_modules/bson/lib/long.js:517:47
+     62  100.0%          LazyCompile: ~deserializeObject /Users/cwoolf/node_modules/bson/lib/parser/deserializer.js:65:27
+     62  100.0%            LazyCompile: ~deserializeObject /Users/cwoolf/node_modules/bson/lib/parser/deserializer.js:65:27
+     35    8.8%      LazyCompile: ~HostAddress /Users/cwoolf/node_modules/mongodb/lib/utils.js:880:16
+     35  100.0%        Function: ^fromString /Users/cwoolf/node_modules/mongodb/lib/utils.js:931:22
+     35  100.0%          Function: ^get hostAddress /Users/cwoolf/node_modules/mongodb/lib/sdam/server_description.js:65:20
+     35  100.0%            LazyCompile: ~<anonymous> /Users/cwoolf/node_modules/mongodb/lib/sdam/server.js:63:55
+     28    7.0%      LazyCompile: ~update /Users/cwoolf/node_modules/mongodb/lib/sdam/topology_description.js:131:11
+     28  100.0%        Function: ^serverUpdateHandler /Users/cwoolf/node_modules/mongodb/lib/sdam/topology.js:321:24
+     28  100.0%          Function: ^<anonymous> /Users/cwoolf/node_modules/mongodb/lib/sdam/topology.js:481:53
+     28  100.0%            Function: ^emit node:events:474:44
+     17    4.3%      LazyCompile: ~parse /Users/cwoolf/node_modules/mongodb/lib/cmap/commands.js:426:10
+     17  100.0%        LazyCompile: ~onMessage /Users/cwoolf/node_modules/mongodb/lib/cmap/connection.js:156:14
+     17  100.0%          Function: ^<anonymous> /Users/cwoolf/node_modules/mongodb/lib/cmap/connection.js:60:44
+     17  100.0%            Function: ^emit node:events:474:44
+     16    4.0%      Function: ~<anonymous> /Users/cwoolf/node_modules/saslprep/lib/memory-code-points.js:1:1
+     16  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+     16  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+     16  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     15    3.8%      LazyCompile: ~createPool node:buffer:151:20
+     15  100.0%        Function: ^allocate node:buffer:398:18
+     15  100.0%          Function: ^allocUnsafe node:buffer:373:42
+     15  100.0%            Function: ^tryCreateBuffer node:fs:414:25
+     15    3.8%      LazyCompile: ~ServerDescription /Users/cwoolf/node_modules/mongodb/lib/sdam/server_description.js:35:16
+     15  100.0%        LazyCompile: ~<anonymous> /Users/cwoolf/node_modules/mongodb/lib/sdam/server.js:63:55
+     15  100.0%          Function: ^emit node:events:474:44
+     15  100.0%            LazyCompile: ~<anonymous> /Users/cwoolf/node_modules/mongodb/lib/sdam/monitor.js:177:73
+      5    1.3%      LazyCompile: ~toString /Users/cwoolf/node_modules/mongodb/lib/utils.js:922:13
+      5  100.0%        LazyCompile: ~ServerDescription /Users/cwoolf/node_modules/mongodb/lib/sdam/server_description.js:35:16
+      5  100.0%          LazyCompile: ~<anonymous> /Users/cwoolf/node_modules/mongodb/lib/sdam/server.js:63:55
+      5  100.0%            Function: ^emit node:events:474:44
+      4    1.0%      Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+
+    180    2.6%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+    180  100.0%    t std::__1::unique_ptr<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*>, std::__1::__hash_node_destructor<std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*> > > > std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > > > >::__construct_node<char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >(char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> >&&)
+    171   95.0%      Function: ^read node:internal/modules/package_json_reader:16:14
+    171  100.0%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+    145   84.8%          Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+    145  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     12    7.0%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+     12  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     10    5.8%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+     10  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      4    2.3%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:472:24
+      4  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      9    5.0%      LazyCompile: ~read node:internal/modules/package_json_reader:16:14
+      5   55.6%        LazyCompile: ~readPackage node:internal/modules/cjs/loader:290:21
+      4   80.0%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:472:24
+      4  100.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1   20.0%          LazyCompile: ~readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%            LazyCompile: ~shouldUseESMLoader node:internal/modules/run_main:30:28
+      4   44.4%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      4  100.0%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:472:24
+      3   75.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1   25.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+
+     73    1.0%  T _vm_copy
+     45   61.6%    t std::__1::unique_ptr<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*>, std::__1::__hash_node_destructor<std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*> > > > std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > > > >::__construct_node<char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >(char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> >&&)
+      2    4.4%      t std::__1::unique_ptr<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*>, std::__1::__hash_node_destructor<std::__1::allocator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, void*> > > > std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > > > >::__construct_node<char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> > >(char const*&, std::__1::unique_ptr<v8::ScriptCompiler::CachedData, std::__1::default_delete<v8::ScriptCompiler::CachedData> >&&)
+      1   50.0%        LazyCompile: ~hash /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:596:14
+      1  100.0%          LazyCompile: ~generate /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:363:22
+      1  100.0%            LazyCompile: ~session /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express-session/index.js:179:26
+      1   50.0%        LazyCompile: ~applyQueryMiddleware /Users/cwoolf/node_modules/mongoose/lib/helpers/query/applyQueryMiddleware.js:27:30
+      1  100.0%          LazyCompile: ~compile /Users/cwoolf/node_modules/mongoose/lib/model.js:4995:33
+      1  100.0%            LazyCompile: ~Mongoose._model /Users/cwoolf/node_modules/mongoose/lib/index.js:581:37
+      1    2.2%      LazyCompile: ~update /Users/cwoolf/node_modules/mongodb/lib/sdam/topology_description.js:131:11
+      1  100.0%        Function: ^serverUpdateHandler /Users/cwoolf/node_modules/mongodb/lib/sdam/topology.js:321:24
+      1  100.0%          Function: ^<anonymous> /Users/cwoolf/node_modules/mongodb/lib/sdam/topology.js:481:53
+      1  100.0%            Function: ^emit node:events:474:44
+      1    2.2%      LazyCompile: ~unenroll node:timers:78:18
+      1  100.0%        Function: ^clearTimeout node:timers:184:22
+      1  100.0%          LazyCompile: ~processWaitQueue /Users/cwoolf/node_modules/mongodb/lib/sdam/topology.js:535:26
+      1  100.0%            LazyCompile: ~serverUpdateHandler /Users/cwoolf/node_modules/mongodb/lib/sdam/topology.js:321:24
+      1    2.2%      LazyCompile: ~storeHeader node:_http_outgoing:517:21
+      1  100.0%        LazyCompile: ~processHeader node:_http_outgoing:501:23
+      1  100.0%          LazyCompile: ~_storeHeader node:_http_outgoing:374:22
+      1  100.0%            LazyCompile: ~writeHead node:_http_server:269:19
+      1    2.2%      LazyCompile: ~setTimeout node:timers:140:20
+      1  100.0%        Function: ^measureAndReschedule /Users/cwoolf/node_modules/mongodb/lib/sdam/monitor.js:295:34
+      1  100.0%          LazyCompile: ~<anonymous> /Users/cwoolf/node_modules/mongodb/lib/sdam/monitor.js:318:109
+      1  100.0%            Function: ^onMessage /Users/cwoolf/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1    2.2%      LazyCompile: ~send /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/send/index.js:83:15
+      1  100.0%        LazyCompile: ~serveStatic /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/serve-static/index.js:72:31
+      1  100.0%          LazyCompile: ~handle /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~trim_prefix /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:293:23
+      1    2.2%      LazyCompile: ~retry /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/graceful-fs/graceful-fs.js:397:16
+      1  100.0%        LazyCompile: ~resetQueue /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/graceful-fs/graceful-fs.js:383:21
+      1  100.0%          LazyCompile: ~closeSync /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/graceful-fs/graceful-fs.js:72:24
+      1  100.0%            Function: ^readFileSync node:fs:450:22
+      1    2.2%      LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:488:36
+      1  100.0%        LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:553:30
+      1  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:553:30
+      1  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:553:30
+      1    2.2%      LazyCompile: ~realpathSync node:fs:2412:22
+      1  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1    2.2%      LazyCompile: ~readFileSync node:fs:450:22
+      1  100.0%        LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%          LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1    2.2%      LazyCompile: ~parserOnIncoming node:_http_server:852:26
+      1  100.0%        LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    2.2%      LazyCompile: ~parseFileMode node:internal/validators:59:23
+      1  100.0%        Function: ^openSync node:fs:576:18
+      1  100.0%          Function: ^readFileSync node:fs:450:22
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1    2.2%      LazyCompile: ~onconnection node:net:1544:22
+      1    2.2%      LazyCompile: ~nocompress /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/compression/index.js:134:25
+      1  100.0%        LazyCompile: ~onResponseHeaders /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/compression/index.js:140:47
+      1  100.0%          LazyCompile: ~writeHead /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/on-headers/index.js:28:29
+      1  100.0%            LazyCompile: ~writeHead /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/on-headers/index.js:28:29
+      1    2.2%      LazyCompile: ~nextTick node:internal/process/task_queues:104:18
+      1  100.0%        LazyCompile: ~SonicBoom /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/sonic-boom/index.js:85:20
+      1  100.0%          LazyCompile: ~buildSafeSonicBoom /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/pino/lib/tools.js:213:29
+      1  100.0%            LazyCompile: ~normalizeArgs /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/pino/lib/tools.js:266:33
+      1    2.2%      LazyCompile: ~matchLayer /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:583:20
+      1  100.0%        LazyCompile: ~next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:177:16
+      1  100.0%          LazyCompile: ~handle /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:136:31
+      1  100.0%            LazyCompile: ~handle /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/application.js:165:29
+      1    2.2%      LazyCompile: ~makeEscape /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/knex/lib/util/string.js:22:20
+      1  100.0%        Function: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/knex/lib/client.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1    2.2%      LazyCompile: ~knex /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/knex/lib/knex-builder/Knex.js:13:14
+      1  100.0%        LazyCompile: ~Contenedor /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/clases/productos.js:3:16
+      1  100.0%          Function: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/app.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1057:37
+      1    2.2%      LazyCompile: ~keys /Users/cwoolf/node_modules/whatwg-url/lib/URLSearchParams.js:371:9
+      1  100.0%        LazyCompile: ~keys /Users/cwoolf/node_modules/mongodb-connection-string-url/lib/index.js:57:13
+      1  100.0%          LazyCompile: ~parseOptions /Users/cwoolf/node_modules/mongodb/lib/connection_string.js:204:22
+      1  100.0%            LazyCompile: ~MongoClient /Users/cwoolf/node_modules/mongodb/lib/mongo_client.js:63:16
+      1    2.2%      LazyCompile: ~insert node:internal/timers:350:16
+      1  100.0%        LazyCompile: ~setUnrefTimeout node:internal/timers:372:25
+      1  100.0%          LazyCompile: ~setStreamTimeout node:internal/stream_base_commons:237:26
+      1  100.0%            LazyCompile: ~makeConnection /Users/cwoolf/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1    2.2%      LazyCompile: ~init /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/debug/src/node.js:231:14
+      1  100.0%        Function: ^createDebug /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/debug/src/common.js:60:22
+      1  100.0%          Function: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/knex/lib/execution/internal/query-executioner.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1    2.2%      LazyCompile: ~handle /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%        LazyCompile: ~trim_prefix /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          LazyCompile: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:280:64
+      1  100.0%            LazyCompile: ~process_params /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:338:47
+      1    2.2%      LazyCompile: ~get /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/body-parser/index.js:121:23
+      1  100.0%        Function: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/express.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1    2.2%      LazyCompile: ~error /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/send/index.js:267:45
+      1  100.0%        LazyCompile: ~onStatError /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/send/index.js:412:57
+      1  100.0%          LazyCompile: ~next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/send/index.js:728:17
+      1  100.0%            LazyCompile: ~onstat /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/send/index.js:717:33
+      1    2.2%      LazyCompile: ~emit node:events:474:44
+      1  100.0%        LazyCompile: ~emitListeningNT node:net:1361:25
+      1  100.0%          LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    2.2%      LazyCompile: ~compileFunction node:vm:308:25
+      1  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1    2.2%      LazyCompile: ~afterWriteDispatched node:internal/stream_base_commons:155:30
+      1  100.0%        LazyCompile: ~writeGeneric node:internal/stream_base_commons:147:22
+      1  100.0%          LazyCompile: ~Socket._writeGeneric node:net:769:42
+      1  100.0%            LazyCompile: ~Socket._write node:net:806:35
+      1    2.2%      LazyCompile: ~Timeout node:internal/timers:167:17
+      1  100.0%        LazyCompile: ~setUnrefTimeout node:internal/timers:372:25
+      1  100.0%          LazyCompile: ~setStreamTimeout node:internal/stream_base_commons:237:26
+      1  100.0%            LazyCompile: ~makeConnection /Users/cwoolf/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1    2.2%      LazyCompile: ~Socket node:net:283:16
+      1  100.0%        LazyCompile: ~WriteStream node:tty:85:21
+      1  100.0%          LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1  100.0%            LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:137:19
+      1    2.2%      LazyCompile: ~Schema.virtual /Users/cwoolf/node_modules/mongoose/lib/schema.js:1996:36
+      1  100.0%        LazyCompile: ~addIdGetter /Users/cwoolf/node_modules/mongoose/lib/helpers/schema/idGetter.js:7:38
+      1  100.0%          LazyCompile: ~_preCompile /Users/cwoolf/node_modules/mongoose/lib/schema.js:2439:52
+      1  100.0%            LazyCompile: ~compile /Users/cwoolf/node_modules/mongoose/lib/model.js:4995:33
+      1    2.2%      LazyCompile: ~Pager.set /Users/cwoolf/node_modules/memory-pager/index.js:81:32
+      1  100.0%        LazyCompile: ~Bitfield /Users/cwoolf/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%          LazyCompile: ~Bitfield /Users/cwoolf/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%            LazyCompile: ~read /Users/cwoolf/node_modules/saslprep/lib/memory-code-points.js:15:14
+      1    2.2%      LazyCompile: ~ObjectId.auto /Users/cwoolf/node_modules/mongoose/lib/schema/objectid.js:104:35
+      1  100.0%        LazyCompile: ~SchemaType /Users/cwoolf/node_modules/mongoose/lib/schematype.js:42:20
+      1  100.0%          LazyCompile: ~ObjectId /Users/cwoolf/node_modules/mongoose/lib/schema/objectid.js:27:18
+      1  100.0%            LazyCompile: ~Schema.interpretAsType /Users/cwoolf/node_modules/mongoose/lib/schema.js:1096:44
+      1    2.2%      LazyCompile: ~MapCache /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/lodash/_MapCache.js:14:18
+      1  100.0%        LazyCompile: ~memoize /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/lodash/memoize.js:50:17
+      1  100.0%          LazyCompile: ~memoizeCapped /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/lodash/_memoizeCapped.js:14:23
+      1  100.0%            Function: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/lodash/_stringToPath.js:1:1
+      1    2.2%      LazyCompile: ~Long.sub /Users/cwoolf/node_modules/bson/lib/long.js:726:35
+      1  100.0%        LazyCompile: ~Long.compare /Users/cwoolf/node_modules/bson/lib/long.js:291:39
+      1  100.0%          Function: ^Long.comp /Users/cwoolf/node_modules/bson/lib/long.js:311:36
+      1  100.0%            LazyCompile: ~Long.lessThanOrEqual /Users/cwoolf/node_modules/bson/lib/long.js:517:47
+      1    2.2%      LazyCompile: ~Agent node:_http_agent:93:15
+      1  100.0%        Function: ~<anonymous> node:_http_agent:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    2.2%      LazyCompile: ~<anonymous> /Users/cwoolf/node_modules/mongodb/lib/cmap/connection_pool.js:87:26
+      1  100.0%        LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    2.2%      Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:internal/fs/promises:1:1
+      1    2.2%      Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      1    2.2%      Function: ~<anonymous> /Users/cwoolf/node_modules/mongoose/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    2.2%      Function: ~<anonymous> /Users/cwoolf/node_modules/mongodb/lib/cmap/connect.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    2.2%      Function: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/passport/lib/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    2.2%      Function: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/handlebars/dist/cjs/handlebars.runtime.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    2.2%      Function: ~<anonymous> /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/node_modules/debug/src/node.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    2.2%      Function: ^debug /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/node_modules/debug/src/debug.js:65:17
+      1  100.0%        Function: ^trim_prefix /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          LazyCompile: *next /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            Function: ^jsonParser /Users/cwoolf/Desktop/ProyectosPR/backend/desafio13/node_modules/body-parser/lib/types/json.js:98:30
+

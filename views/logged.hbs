@@ -1,0 +1,49 @@
+<div class="alert alert-success" role="alert">
+  Bienvenido {{nombre}}
+</div>
+<a class="btn btn-primary" href="/logout" role="button">Log Out</a>
+<div class="text-bg-warning p-3">
+        <h1>Agrega un producto</h1>
+        <form id="formProductos">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="nombre" name="nombre">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="precio" name="precio">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="imagen" name="imagen">
+            </div>
+            <button class="btn btn-dark">Enviar</button>
+        </form>
+    </div>
+    <div id="productos"></div>
+    <div class="text-bg-warning p-3">
+        <h1>Centro de mensajes</h1>
+        <div id="mensajes"></div>
+        <form id="formMensajes">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="correo" placeholder="correo">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="nombre" placeholder="nombre">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="apellido" placeholder="apellido">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="edad" placeholder="edad">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="alias" placeholder="alias">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="avatar" placeholder="url de foto de avatar">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="mensaje" placeholder="escribe un mensaje">
+            </div>
+            <button class="btn btn-dark" id="botonEnviar">Enviar</button>
+        </form>
+    </div>
+<script src="../main.js"></script>

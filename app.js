@@ -213,7 +213,7 @@ app.get('*', ( req , res ) => {
     res.send(`Ruta ${method} ${url} no está implementada`)
 })
 
-const PORT = args._[0] || 8080
+const PORT = process.env.PORT || 8080
 
 if(modo && cluster.isPrimary) {
     console.log(`Número de procesadores: ${numCPUs}`)
